@@ -1,0 +1,380 @@
+
+
+
+// main
+.container {
+    transition-duration: .7s;
+
+    display: flex;
+    padding: 0 10px;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.left_part {
+    flex: 1;
+    border-right: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.options {
+    display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+    gap: 15px;
+    overflow: hidden;
+
+}
+
+.option {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+    transition-duration: .7s;
+
+    &:hover {
+        transform: scale(1.2)
+    }
+}
+
+.option-last {
+    border-bottom: none;
+}
+
+.messengers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    margin: 0 auto;
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+
+.right_part {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title {
+    font-size: 80px;
+    text-align: center;
+    font-weight: 700;
+    padding-top: 15px;
+}
+
+.form {
+    margin: 0 auto;
+    display: flex;
+    gap: 5px;
+    padding-top: 15px;
+}
+
+.findUser {
+    border: 2px solid black;
+    outline: none;
+
+    &:focus {
+        outline: none;
+    }
+
+    height: 30px;
+    padding: 7px;
+    border-radius: 20px 0 0 20px;
+    width: 350px;
+    font-size: 18px;
+
+}
+
+.findUser::placeholder {
+    font-size: 16px;
+}
+
+.find {
+    height: 30px;
+    border-radius: 0 20px 20px 0;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    width: 70px;
+    font-weight: bold;
+    background-color: gray;
+}
+
+
+.profile {
+    margin: 0 auto;
+    padding: 5px;
+    margin-top: 10px;
+    padding-top: 14px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 5px solid gray;
+    border-radius: 30px;
+
+}
+
+.user_name {
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.main_block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 30px;
+    align-items: center;
+    align-self: center;
+}
+
+.photo_prof {
+    border-radius: 20px;
+    height: 90px;
+    widows: 90px;
+}
+
+.description {
+    font-size: 22px;
+    text-align: center;
+}
+
+.other_info {
+    align-self: start;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.punkt {
+    font-size: 25px;
+    padding-bottom: 5px;
+    span {
+        padding-left: 20px;
+    }
+}
+
+
+.repo_block {
+    padding: 5px;
+    padding-top: 30px;
+
+    h2 {
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+.repos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 20px;
+}
+
+.repo {
+    border-bottom: 3px solid gray;
+    // border-top: 3px solid gray;
+    margin: 10px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.repo_title {
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.repo_desc {
+    padding-top: 10px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.repo_punkt {
+    align-self: start;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.get_repo_block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.get_repo {
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #48A0FF;
+    transition-duration: .7s;
+
+    &:hover {
+        background-color: #397EC9;
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+
+    .title {
+        font-size: 70px;
+    }
+
+    .left_part {
+        border-right: none;
+        justify-content: flex-end;
+    }
+
+    .messengers {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .profile {
+        width: 100%;
+    }
+    .other_info{
+        padding-left: 10px;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .title {
+        font-size: 50px;
+    }
+
+    .findUser {
+        width: 300px;
+    }
+
+    .user_name {
+        font-size: 30px;
+    }
+
+    .description, .punkt, .repo_desc, .repo_title{
+        font-size: 18px;
+    }
+
+    .repos{
+        gap: 15px;
+        padding-top: 0;
+    }
+    .repo_block{
+        h2{
+            font-size: 25px;
+        }
+    }
+
+    .profile{
+        border: 3px solid gray;
+    }
+
+
+    .main_block {
+        padding-left: 5px;
+    }
+
+    .other_info {
+        padding-left: 5px;
+    }
+
+    .repo{
+        border-bottom: 1px solid grey;
+    }
+
+    .option {
+        font-size: 22px;
+        border: none;
+    }
+
+    .messengers {
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 430px) {
+   .title{
+        font-size: 45px;
+   }
+   .findUser {
+        width: 250px;
+    }
+}
+
+
+
+
+.error {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.error_desc {
+    text-align: center;
+    font-size: 30px;
+}
+
+.block_back {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.back {
+    padding: 5px 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #48A0FF;
+    transition-duration: .7s;
+
+    &:hover {
+        background-color: #397EC9;
+    }
+}
+
+
+
+.my_profile {
+    border: none;
+}
+
+.loadingRepo, .loadingUser{
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+}
+.loadingRepo{
+    margin-bottom: 10px;
+}
