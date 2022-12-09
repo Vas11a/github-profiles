@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/github-profiles/static/css/main.a5bef33a.css",
-    "main.js": "/github-profiles/static/js/main.1ed4b50a.js",
+    "main.css": "/github-profiles/static/css/main.e6818a32.css",
+    "main.js": "/github-profiles/static/js/main.fc1782e8.js",
     "static/media/loading.gif": "/github-profiles/static/media/loading.803f24369a085e35482e.gif",
     "static/media/gmail.png": "/github-profiles/static/media/gmail.e170b0658befeeeee500.png",
     "static/media/linkedIn.png": "/github-profiles/static/media/linkedIn.f1d668322dd800064ae5.png",
     "index.html": "/github-profiles/index.html",
-    "main.a5bef33a.css.map": "/github-profiles/static/css/main.a5bef33a.css.map",
-    "main.1ed4b50a.js.map": "/github-profiles/static/js/main.1ed4b50a.js.map"
+    "main.e6818a32.css.map": "/github-profiles/static/css/main.e6818a32.css.map",
+    "main.fc1782e8.js.map": "/github-profiles/static/js/main.fc1782e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.a5bef33a.css",
-    "static/js/main.1ed4b50a.js"
+    "static/css/main.e6818a32.css",
+    "static/js/main.fc1782e8.js"
   ]
 }
